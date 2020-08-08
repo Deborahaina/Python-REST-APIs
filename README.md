@@ -18,10 +18,10 @@ Data's true power lies in its ability to answer questions definitively. I will b
 
 *Citipy package, a very uselful python library returns a list of world cities based on longitude and latitude coordinates. This however does not generate uniformly distributed random sample so it is important to use the numpy built in 'uniform' method.This is so we can avoid creating a biased dataset that concentrates on a particular region of the world.
 
-I used this in conjuction with the OpenWetherMap Api which returned information on the unique cities returned from looping through citipy library. I converted the data returned into a json format for easy parsing. I used the city name endpoint and this returned the data that I needed to plot my visualizations.You can sign up for an Api key using the free tier. There are other paid tiers available as well.(https://openweathermap.org/api)
+Used this in conjuction with the OpenWetherMap Api which returned information on the unique cities returned from looping through citipy library. I converted the data returned into a json format for easy parsing. I used the city name endpoint and this returned the data that I needed to plot my visualizations.You can sign up for an Api key using the free tier. There are other paid tiers available as well.(https://openweathermap.org/api)
 
-Pandas
-I created an empty list in which I appended the dataset I processed from my API requests. This was converted into a pandas dataframe and saved as a csv file.
+Pandas ====>
+TUsed pandas to create an empty list which was used to append the dataset processed from the API requests. This was converted into a pandas dataframe and finally saved as a csv file.
 
 Matplotlib
 My objective is to build a series of scatter plots to showcase the following relationships:
@@ -31,9 +31,6 @@ Latitude Vs Cloudiness
 Latitude Vs Windspeed
 
 
-
-Time Module
-The time retuned is retuned in UTC format so we used the time.strftime module to convert it to current time.
 
 
 
